@@ -217,7 +217,7 @@ function jsonToGo(json, typename, flatten = true)
 				append(typename+" ");
 				parent = typename
 				parseScope(scope[keys[i]], depth);
-				append(' `json:"'+keyname + ' bson:"' + keyname);
+				append(' `json:"'+keyname+'"' + ' bson:"' + keyname);
 				if (omitempty && omitempty[keys[i]] === true)
 				{
 					append(',omitempty');
